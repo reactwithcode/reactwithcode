@@ -1,5 +1,5 @@
 {
-  "name": "Adhoc Portfolio",
+  "name": "RWC Portfolio",
   "homepage": "",
   "authors": [
     "developertenzin <>"
@@ -10,7 +10,6 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
     "test",
     "tests"
   ],
