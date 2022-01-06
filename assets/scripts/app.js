@@ -21,6 +21,10 @@ function makeWords() {
 			weight: 13,
 		},
 		{
+			text: 'typescript',
+			weight: 12,
+		},
+		{
 			text: 'jquery',
 			weight: 11,
 		},
@@ -38,6 +42,10 @@ function makeWords() {
 		},
 		{
 			text: 'nextjs',
+			weight: 12,
+		},
+		{
+			text: 'redux',
 			weight: 12,
 		},
 		{
