@@ -122,7 +122,7 @@ $(document).ready(function () {
 	Typed.new('#writing-text', {
 		strings: [
 			'am a Front-End Developer.',
-			'am a Shopify Developer.',
+			'am a Mobile Developer.',
 			'love everything about code.',
 			'solve problems.',
 		],
