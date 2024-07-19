@@ -202,6 +202,10 @@ body {
 	.menu-container input:checked ~ .menu {
 	  transform: translateX(-100%);
 	}
+
+	.my-button {
+		font-size: 0.5em;
+	}
   }
   
   /* desktop styles */
