@@ -146,6 +146,8 @@ $(document).ready(function () {
 	var modal2 = document.getElementById('myModal2');
 	var btn2 = document.getElementById("myBtn2");
 	var span = document.getElementsByClassName("close")[0];
+	var android = navigator.userAgent.match(/Android/i);
+	var iphone = navigator.userAgent.match(/iPhone/i);
 
 	var stopVideo = function ( ) {
 		var iframe = document.querySelector( 'iframe');
@@ -160,7 +162,8 @@ $(document).ready(function () {
 	};
 
 	btn1.onclick = function() {
-		modal1.style.display = "block";
+		android || iphone ? window.location.href = "https://youtu.be/OsvmDhEa1pI?si=Do0MtKMLEKeAOMt6"
+		: modal1.style.display = "block";
 	}
 
 	span.onclick = function() {
@@ -170,7 +173,8 @@ $(document).ready(function () {
 	}
 
 	btn2.onclick = function() {
-		modal2.style.display = "block";
+		android || iphone ? window.location.href = "https://youtu.be/dXAr-UGoRHg?si=WF5uVVkwUgsonCE7"
+		: modal2.style.display = "block";
 	}
 
 	window.onclick = function(event) {
