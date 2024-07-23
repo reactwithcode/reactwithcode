@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
 	<link rel="stylesheet" href="assets/styles/styles.css">
 
-	<script src="https://unpkg.com/@botpoison/browser" async></script>
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HP51W07BEM"></script>
@@ -31,6 +31,17 @@
 	  gtag('js', new Date());
 	
 	  gtag('config', 'G-HP51W07BEM');
+	</script>
+
+	<script>
+		window.onloadTurnstileCallback = function () {
+		turnstile.render('#example-container', {
+			sitekey: '0x4AAAAAAAfppI_shIsCsofn',
+			callback: function(token) {
+				console.log(`Challenge Success ${token}`);
+			},
+		});
+		};
 	</script>
 
 <body>
@@ -400,3 +411,4 @@
 </body>
 
 </html>
+
