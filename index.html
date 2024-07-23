@@ -31,6 +31,8 @@
 	  gtag('config', 'G-HP51W07BEM');
 	</script>
 
+	<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
 <body>
 	<div class="wrapper">
 
@@ -364,22 +366,24 @@
 				</div> -->
 			</div>
 			<div class="row small-12 medium-8 medium-offset-2 columns" style="margin: auto; width: 50%;">
-				<form action="https://submit-form.com/fjXGRwb8F">
-					<div style="margin-bottom: 40px;">
-						<p for="name">Name</p>
-						<input type="text" id="name" name="name" placeholder="Name" required="" />
-						<p for="email">Email</p>
-						<input type="email" id="email" name="email" placeholder="Email" required="" />
-						<p for="message">Message</p>
-						<textarea
-						  id="message"
-						  name="message"
-						  placeholder="Message"
-						  required=""
-						></textarea>
-					</div>						
-					<button class="my-button" type="submit">Send</button>
-				  </form>				  
+				<div class="g-recaptcha" data-sitekey="6LclbxYqAAAAAHgabh5CQ6Cq_mmtzMcPYj1hdF5V" data-action="LOGIN">
+					<form action="https://submit-form.com/fjXGRwb8F">
+						<div style="margin-bottom: 40px;">
+							<p for="name">Name</p>
+							<input type="text" id="name" name="name" placeholder="Name" required="" />
+							<p for="email">Email</p>
+							<input type="email" id="email" name="email" placeholder="Email" required="" />
+							<p for="message">Message</p>
+							<textarea
+							  id="message"
+							  name="message"
+							  placeholder="Message"
+							  required=""
+							></textarea>
+						</div>						
+						<button class="my-button" type="submit">Send</button>
+					  </form>
+				</div>				  
 			</div>
 		</section>
 
