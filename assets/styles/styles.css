@@ -463,6 +463,14 @@ body {
 		color:  #76D093;
 }
 
+label {
+	color: #fff;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	margin-bottom: 1.8em;
+}
+
 /*** teaching ***/
 #teaching {
 	padding: 6em 4em 3em;
