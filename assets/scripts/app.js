@@ -2,11 +2,11 @@ function makeWords() {
 	var words = [
 		{
 			text: 'html5',
-			weight: 12.3,
+			weight: 12,
 		},
 		{
 			text: 'css3',
-			weight: 12.5,
+			weight: 12,
 		},
 		{
 			text: 'sass',
@@ -38,7 +38,7 @@ function makeWords() {
 		},
 		{
 			text: 'react',
-			weight: 12,
+			weight: 12.5,
 		},
 		{
 			text: 'nextjs',
@@ -50,7 +50,7 @@ function makeWords() {
 		},
 		{
 			text: 'react native',
-			weight: 12,
+			weight: 12.3,
 		},
 		{
 			text: 'nodejs',
@@ -66,7 +66,7 @@ function makeWords() {
 		},
 		{
 			text: 'shopify development',
-			weight: 10,
+			weight: 13,
 		},
 		{
 			text: 'mobile development',
@@ -86,11 +86,11 @@ function makeWords() {
 		},
 		{
 			text: 'bootstrap',
-			weight: 12.3,
+			weight: 11.3,
 		},
 		{
 			text: 'tailwind',
-			weight: 12.3,
+			weight: 11.3,
 		},
 		/* ... */
 	];
@@ -121,8 +121,8 @@ function designForm() {
 $(document).ready(function () {
 	Typed.new('#writing-text', {
 		strings: [
+			'am a Shopify Developer.',
 			'am a Front-End Developer.',
-			'am a Mobile Developer.',
 			'love everything about code.',
 			'solve problems.',
 		],
@@ -140,3 +140,43 @@ $(document).ready(function () {
 
 	displayWordCloud();
 });
+
+	var modal1 = document.getElementById('myModal1');
+	var btn1 = document.getElementById("myBtn1");
+	var modal2 = document.getElementById('myModal2');
+	var btn2 = document.getElementById("myBtn2");
+	var span = document.getElementsByClassName("close")[0];
+
+	var stopVideo = function ( ) {
+		var iframe = document.querySelector( 'iframe');
+		var video = document.querySelector( 'video' );
+		if ( iframe ) {
+			var iframeSrc = iframe.src;
+			iframe.src = iframeSrc;
+		}
+		if ( video ) {
+			video.pause();
+		}
+	};
+
+	btn1.onclick = function() {
+		modal1.style.display = "block";
+	}
+
+	span.onclick = function() {
+		modal1.style.display = "none";
+		modal2.style.display = "none";
+		stopVideo();
+	}
+
+	btn2.onclick = function() {
+		modal2.style.display = "block";
+	}
+
+	window.onclick = function(event) {
+		if (event.target == modal1 || event.target == modal2) {
+			modal1.style.display = "none";
+			modal2.style.display = "none";
+			stopVideo();
+		}
+	}
