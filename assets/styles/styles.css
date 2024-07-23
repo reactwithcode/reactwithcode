@@ -280,6 +280,11 @@ body {
 	.menu li {
 	  padding: 0 20px;
 	}
+
+	.my-button {
+		font-size: 1em;
+	}
+
   }
 
 
