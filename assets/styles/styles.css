@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: none;
 }
 
+.cf-turnstile {
+	margin: -10px 0 15px 0;
+}
+
 /*#my-modal {
 	display: none;
 }

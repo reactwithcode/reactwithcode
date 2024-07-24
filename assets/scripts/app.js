@@ -173,7 +173,7 @@ $(document).ready(function () {
 	}
 
 	btn2.onclick = function() {
-		android || iphone ? window.location.href = "https://youtu.be/dXAr-UGoRHg?si=WF5uVVkwUgsonCE7"
+		android || iphone ? window.location.href = "https://youtu.be/Z026MJbw9YA?si=31Vu6vER096cODd_"
 		: modal2.style.display = "block";
 	}
 
