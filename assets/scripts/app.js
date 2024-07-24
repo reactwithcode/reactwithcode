@@ -145,7 +145,8 @@ $(document).ready(function () {
 	var btn1 = document.getElementById("myBtn1");
 	var modal2 = document.getElementById('myModal2');
 	var btn2 = document.getElementById("myBtn2");
-	var span = document.getElementsByClassName("close")[0];
+	var span1 = document.getElementsByClassName("close")[0];
+	var span2 = document.getElementsByClassName("close")[1];
 	var android = navigator.userAgent.match(/Android/i);
 	var iphone = navigator.userAgent.match(/iPhone/i);
 
@@ -166,8 +167,12 @@ $(document).ready(function () {
 		: modal1.style.display = "block";
 	}
 
-	span.onclick = function() {
+	span1.onclick = function() {
 		modal1.style.display = "none";
+		stopVideo();
+	}
+
+	span2.onclick = function() {
 		modal2.style.display = "none";
 		stopVideo();
 	}
