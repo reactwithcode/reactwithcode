@@ -81,7 +81,7 @@ function makeWords() {
 			weight: 13,
 		},
 		{
-			text: 'postgresql',
+			text: 'postgreSQL',
 			weight: 13,
 		},
 		{
