@@ -50,11 +50,11 @@ function makeWords() {
 		},
 		{
 			text: 'react native',
-			weight: 12.3,
+			weight: 11,
 		},
 		{
 			text: 'nodejs',
-			weight: 11,
+			weight: 12.3,
 		},
 		{
 			text: 'npm',
@@ -77,11 +77,11 @@ function makeWords() {
 			weight: 13,
 		},
 		{
-			text: 'firebase',
+			text: 'mongoDB',
 			weight: 10,
 		},
 		{
-			text: 'responsive design',
+			text: 'postgresql',
 			weight: 10,
 		},
 		{
@@ -121,8 +121,8 @@ function designForm() {
 $(document).ready(function () {
 	Typed.new('#writing-text', {
 		strings: [
+			'am a Full-stack Developer.',
 			'am a Shopify Developer.',
-			'am a Front-End Developer.',
 			'love everything about code.',
 			'solve problems.',
 		],
