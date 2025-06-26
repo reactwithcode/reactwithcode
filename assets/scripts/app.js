@@ -10,11 +10,11 @@ function makeWords() {
 		},
 		{
 			text: 'sass',
-			weight: 12,
+			weight: 9,
 		},
 		{
 			text: 'scss',
-			weight: 12,
+			weight: 9,
 		},
 		{
 			text: 'javascript',
@@ -22,15 +22,15 @@ function makeWords() {
 		},
 		{
 			text: 'typescript',
-			weight: 12,
+			weight: 13,
 		},
 		{
 			text: 'jquery',
-			weight: 11,
+			weight: 10,
 		},
 		{
 			text: 'liquid',
-			weight: 13,
+			weight: 12,
 		},
 		{
 			text: 'programming',
@@ -38,11 +38,11 @@ function makeWords() {
 		},
 		{
 			text: 'react',
-			weight: 12.5,
+			weight: 13,
 		},
 		{
 			text: 'nextjs',
-			weight: 12,
+			weight: 13,
 		},
 		{
 			text: 'redux',
@@ -78,11 +78,11 @@ function makeWords() {
 		},
 		{
 			text: 'mongoDB',
-			weight: 10,
+			weight: 13,
 		},
 		{
 			text: 'postgresql',
-			weight: 10,
+			weight: 13,
 		},
 		{
 			text: 'bootstrap',
@@ -90,7 +90,7 @@ function makeWords() {
 		},
 		{
 			text: 'tailwind',
-			weight: 11.3,
+			weight: 11.8,
 		},
 		/* ... */
 	];
