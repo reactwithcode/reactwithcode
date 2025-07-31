@@ -9,11 +9,11 @@ function makeWords() {
 			weight: 12,
 		},
 		{
-			text: 'sass',
+			text: 'graphql',
 			weight: 9,
 		},
 		{
-			text: 'scss',
+			text: 'polaris',
 			weight: 9,
 		},
 		{
@@ -57,7 +57,7 @@ function makeWords() {
 			weight: 12.3,
 		},
 		{
-			text: 'npm',
+			text: 'Git',
 			weight: 10,
 		},
 		{
@@ -85,7 +85,7 @@ function makeWords() {
 			weight: 13,
 		},
 		{
-			text: 'bootstrap',
+			text: 'shopify APIs',
 			weight: 11.3,
 		},
 		{
