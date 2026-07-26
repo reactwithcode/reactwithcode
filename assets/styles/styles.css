@@ -617,3 +617,19 @@ label {
 	font-weight: 500;
 	color: #fff;
 }
+
+/* Small addition for the footer legal link — not part of the base stylesheet */
+#footer .footer-links{
+	margin-top: .8em;
+	margin-bottom: .4em;
+}
+#footer .footer-links a{
+	color: #9aa0ad;
+	font-family: "Maven Pro", sans-serif;
+	font-weight: 500;
+	font-size: .9em;
+	transition: color .3s ease;
+}
+#footer .footer-links a:hover{
+	color: #76D093;
+}

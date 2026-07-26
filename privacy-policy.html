@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
+	<title>Privacy Policy | ReactWithCode</title>
+	<link rel="icon" type="image/x-icon" href="/assets/images/RWC-logo.png">
+
+	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
+	<script src="bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
+	<script src="bower_components/normalize-css/normalize.css" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
+	<link rel="stylesheet" href="assets/styles/styles.css">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HP51W07BEM"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-HP51W07BEM');
+	</script>
+
+	<style>
+		/* ===== Page-specific additions only — everything else inherits assets/styles/styles.css ===== */
+
+		#policy-hero{
+			margin-top: 8em;
+			background-color: #12141D;
+			padding: 0 2em 3em;
+		}
+		#policy-hero .eyebrow{
+			color: #76D093;
+			font-family: "Maven Pro", sans-serif;
+			font-weight: 500;
+			font-size: .95em;
+			text-transform: uppercase;
+			letter-spacing: .08em;
+			margin-bottom: .5em;
+		}
+		#policy-hero h1{
+			color: #fff;
+			font-family: "Lato", sans-serif;
+			font-weight: 900;
+			font-size: 3em;
+			margin-bottom: .3em;
+		}
+		#policy-hero .doc-meta{
+			color: #8890a0;
+			font-family: "Maven Pro", sans-serif;
+			font-size: .95em;
+			display: flex;
+			gap: 24px;
+			flex-wrap: wrap;
+			margin-bottom: 1.4em;
+		}
+		#policy-hero .doc-meta b{ color: #76D093; font-weight: 500; }
+		#policy-hero p.intro{
+			color: #fff;
+			font-family: "Maven Pro", sans-serif;
+			font-weight: 500;
+			font-size: 1.1em;
+			max-width: 70ch;
+			line-height: 1.7;
+		}
+
+		#policy-toc{
+			background-color: #12141D;
+			padding: 0 2em 3em;
+		}
+		#policy-toc .toc-label{
+			font-family: "Maven Pro", sans-serif;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: .08em;
+			font-size: .8em;
+			color: #6f7688;
+			margin-bottom: 14px;
+			text-align: center;
+		}
+		#policy-toc ul{
+			list-style: none;
+			margin: 0; padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 10px 16px;
+		}
+		#policy-toc ul li{ padding: 0; }
+		#policy-toc a{
+			font-family: "Maven Pro", sans-serif;
+			font-weight: 500;
+			font-size: .92em;
+			color: #9aa0ad;
+			border: 1px solid #2c2f3d;
+			border-radius: 20px;
+			padding: 6px 16px;
+			display: inline-block;
+			transition: color .3s ease, border-color .3s ease;
+		}
+		#policy-toc a:hover{ color: #76D093; border-color: #76D093; }
+		#policy-toc a .n{ font-family: "Lato", sans-serif; font-weight: 900; margin-right: 6px; color: #454a59; }
+		#policy-toc a:hover .n{ color: #76D093; }
+
+		.policy-section{
+			padding: 3.5em 2em;
+		}
+		.policy-section:nth-of-type(odd){ background-color: #12141D; }
+		.policy-section:nth-of-type(even){ background-color: #20222E; }
+
+		.policy-section .sec-head{
+			display: flex;
+			align-items: baseline;
+			gap: 14px;
+			margin-bottom: .8em;
+		}
+		.policy-section .sec-num{
+			font-family: "Lato", sans-serif;
+			font-weight: 900;
+			color: #76D093;
+			font-size: 1.1em;
+		}
+		.policy-section h2{
+			color: #fff;
+			font-family: "Lato", sans-serif;
+			font-weight: 900;
+			font-size: 1.6em;
+			text-align: left;
+		}
+		.policy-section h3.sub{
+			color: #76D093;
+			font-family: "Lato", sans-serif;
+			font-weight: 900;
+			font-size: 1.05em;
+			margin: 1.4em 0 .5em;
+		}
+		.policy-section p, .policy-section li{
+			color: #fff;
+			font-family: "Maven Pro", sans-serif;
+			font-weight: 500;
+			font-size: 1.05em;
+			line-height: 1.75;
+		}
+		.policy-section ul{ padding-left: 22px; margin-bottom: 1em; }
+		.policy-section li{ margin-bottom: 8px; }
+
+		.policy-fill{
+			background: rgba(118,208,147,0.12);
+			border: 1px dashed #73CB8E;
+			color: #76D093;
+			padding: 0 6px;
+			border-radius: 4px;
+			font-family: "Maven Pro", sans-serif;
+			font-size: .92em;
+		}
+		code.policy-inline{
+			font-family: monospace;
+			background: #0d0f16;
+			border: 1px solid #2c2f3d;
+			color: #76D093;
+			padding: 2px 7px;
+			border-radius: 5px;
+			font-size: .88em;
+		}
+
+		table.policy-matrix{
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 12px;
+			font-size: .95em;
+		}
+		table.policy-matrix th, table.policy-matrix td{
+			border: 1px solid #2c2f3d;
+			padding: 12px 14px;
+			text-align: left;
+			vertical-align: top;
+			color: #fff;
+			font-family: "Maven Pro", sans-serif;
+		}
+		table.policy-matrix th{
+			background: #0d0f16;
+			font-weight: 500;
+			color: #76D093;
+			font-size: .8em;
+			text-transform: uppercase;
+			letter-spacing: .04em;
+		}
+
+		.policy-note{
+			margin-top: 14px;
+			font-size: .88em;
+			color: #6f7688;
+			font-style: italic;
+			font-family: "Maven Pro", sans-serif;
+		}
+
+		.policy-contact-card{
+			display: inline-block;
+			background: rgba(118,208,147,0.08);
+			border: 1px solid rgba(118,208,147,0.25);
+			border-radius: 12px;
+			padding: 22px 26px;
+			margin-top: 8px;
+		}
+		.policy-contact-card div{ margin-bottom: 4px; font-size: 1em; color: #fff; font-family: "Maven Pro", sans-serif; }
+		.policy-contact-card .label{
+			font-family: "Maven Pro", sans-serif;
+			font-weight: 500;
+			color: #76D093;
+			font-size: .78em;
+			text-transform: uppercase;
+			letter-spacing: .06em;
+			margin-bottom: 3px;
+		}
+		.policy-contact-card a{ color: #fff; }
+		.policy-contact-card a:hover{ color: #00C6A7; }
+
+		@media only screen and (max-width: 670px){
+			#policy-hero{ margin-top: 6em; padding: 0 1.2em 2em; }
+			#policy-hero h1{ font-size: 2em; }
+			.policy-section{ padding: 2.4em 1.2em; }
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="thin-bar"></div>
+
+		<nav class="menu-container">
+			<input type="checkbox" aria-label="Toggle menu" />
+			<span></span>
+			<span></span>
+			<span></span>
+
+			<a href="/" class="menu-logo">
+				<h2>ReactWithCode</h2>
+			</a>
+
+			<div class="menu">
+				<ul></ul>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/#work">Work</a></li>
+					<li><a href="/#footer-cta">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="policy-hero">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="eyebrow">Legal</div>
+					<h1>Privacy Policy</h1>
+					<div class="doc-meta">
+						<span>Effective date: <b><span class="policy-fill">Insert date</span></b></span>
+						<span>Last updated: <b><span class="policy-fill">Insert date</span></b></span>
+					</div>
+					<p class="intro">
+						This Privacy Policy describes how <span class="policy-fill">Your Name / Business Name</span>
+						("we," "us," or "our") collects, uses, and protects information across our software
+						products — Shopify applications, web applications, and mobile applications
+						(collectively, the "Services"). It applies to all Services we build and maintain,
+						unless a specific Service links to its own policy.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="policy-toc">
+			<div class="row">
+				<div class="small-12 large-10 large-offset-1 columns">
+					<div class="toc-label">Jump to a section</div>
+					<ul>
+						<li><a href="#scope"><span class="n">01</span>Scope</a></li>
+						<li><a href="#collect"><span class="n">02</span>Info we collect</a></li>
+						<li><a href="#use"><span class="n">03</span>How we use it</a></li>
+						<li><a href="#handling"><span class="n">04</span>Data handling</a></li>
+						<li><a href="#sharing"><span class="n">05</span>Third parties</a></li>
+						<li><a href="#retention"><span class="n">06</span>Retention</a></li>
+						<li><a href="#rights"><span class="n">07</span>Your rights</a></li>
+						<li><a href="#security"><span class="n">08</span>Security</a></li>
+						<li><a href="#children"><span class="n">09</span>Children</a></li>
+						<li><a href="#changes"><span class="n">10</span>Changes</a></li>
+						<li><a href="#contact"><span class="n">11</span>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="scope">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">01</span><h2>Scope</h2></div>
+					<p>This policy covers:</p>
+					<ul>
+						<li>Shopify applications listed in the Shopify App Store or installed on merchant stores</li>
+						<li>Web applications hosted at reactwithcode.com or related domains</li>
+						<li>Mobile applications distributed via the Apple App Store and/or Google Play</li>
+					</ul>
+					<p>Some Services store data only temporarily to process a request ("pass-through"), while others store data on our servers to provide ongoing functionality (e.g., saved settings, analytics, logs). The handling depends on the specific Service — see Section 4.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="collect">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">02</span><h2>Information we collect</h2></div>
+
+					<h3 class="sub">Account &amp; store information</h3>
+					<ul>
+						<li>Shop name, domain, email, and plan details (for Shopify apps, via the Shopify Admin API)</li>
+						<li>Account credentials or tokens required to authenticate API access</li>
+					</ul>
+
+					<h3 class="sub">Customer / end-user data (where applicable)</h3>
+					<ul>
+						<li>Order, product, or customer information accessed via granted API scopes, solely to provide the app's functionality</li>
+						<li>Contact details submitted through forms, checkout extensions, or app features</li>
+					</ul>
+
+					<h3 class="sub">Usage &amp; technical data</h3>
+					<ul>
+						<li>Log data (IP address, browser type, device type, pages visited)</li>
+						<li>Analytics events (feature usage, error logs) used to improve the Services</li>
+						<li>Cookies or similar technologies on web applications</li>
+					</ul>
+
+					<h3 class="sub">Mobile-specific data</h3>
+					<ul>
+						<li>Device identifiers, push notification tokens, and permissions you grant (camera, location, etc.), only where required for a specific feature</li>
+					</ul>
+
+					<p class="policy-note">We only collect what is necessary for the Service in question to function.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="use">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">03</span><h2>How we use information</h2></div>
+					<ul>
+						<li>Provide, operate, and maintain the Service</li>
+						<li>Authenticate and process API requests (e.g., Shopify Admin/Storefront API calls)</li>
+						<li>Diagnose issues, monitor performance, and improve functionality</li>
+						<li>Communicate with you about updates, support, or billing</li>
+						<li>Comply with legal obligations</li>
+					</ul>
+					<p>We do <strong>not</strong> sell personal data. We do not use merchant or customer data for advertising purposes.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="handling">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">04</span><h2>Data handling by service type</h2></div>
+					<table class="policy-matrix">
+						<thead>
+							<tr><th>Service type</th><th>Data storage approach</th></tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Shopify apps (pass-through)</td>
+								<td>Data is processed in-memory or transiently to fulfill a request and is not persisted on our servers beyond what's needed for the transaction.</td>
+							</tr>
+							<tr>
+								<td>Shopify apps (persistent)</td>
+								<td>App settings, cached store data, or logs may be stored in our database (e.g., <span class="policy-fill">hosting provider</span>) to support ongoing features.</td>
+							</tr>
+							<tr>
+								<td>Web applications</td>
+								<td>User-submitted data and analytics may be stored in our database to provide account features and improve the product.</td>
+							</tr>
+							<tr>
+								<td>Mobile applications</td>
+								<td>Device tokens and user-generated content may be stored to support notifications, sync, or saved preferences.</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="policy-note">Update this table per app if a specific product needs more detail — you can link out to an app-specific addendum if one product differs meaningfully from the rest.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="sharing">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">05</span><h2>Third-party sharing</h2></div>
+					<p>We may share data with trusted service providers who help us operate the Services, such as:</p>
+					<ul>
+						<li>Hosting/infrastructure providers (e.g., <span class="policy-fill">Vercel / Render / AWS</span>)</li>
+						<li>Analytics providers (e.g., <span class="policy-fill">Google Analytics / Plausible</span>)</li>
+						<li>Email or notification providers (e.g., <span class="policy-fill">SendGrid / Firebase</span>)</li>
+						<li>Payment processors (e.g., Shopify Billing API, Stripe)</li>
+					</ul>
+					<p>These providers are contractually obligated to protect data and use it only to perform services on our behalf. We do not share data with third parties for their own marketing purposes.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="retention">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">06</span><h2>Retention &amp; deletion</h2></div>
+					<p>We retain data only as long as necessary to provide the Service or comply with legal requirements. Merchants and users may request deletion of their data by contacting us (Section 11).</p>
+					<p>For Shopify apps, we comply with Shopify's mandatory GDPR webhooks — <code class="policy-inline">customers/data_request</code>, <code class="policy-inline">customers/redact</code>, <code class="policy-inline">shop/redact</code> — to handle data subject requests automatically.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="rights">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">07</span><h2>Your rights</h2></div>
+					<p>Depending on your location, you may have rights under GDPR, CCPA, or similar laws, including the right to:</p>
+					<ul>
+						<li>Access the data we hold about you</li>
+						<li>Request correction or deletion</li>
+						<li>Object to or restrict certain processing</li>
+						<li>Request a copy of your data in a portable format</li>
+					</ul>
+					<p>To exercise these rights, contact us using the details in Section 11.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="security">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">08</span><h2>Security</h2></div>
+					<p>We use reasonable technical and organizational measures — encryption in transit, access controls, secure token storage — to protect data against unauthorized access, loss, or misuse. No system is 100% secure, and we cannot guarantee absolute security.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="children">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">09</span><h2>Children's privacy</h2></div>
+					<p>Our Services are not directed to children under 13 (or 16, where applicable), and we do not knowingly collect data from children.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="changes">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">10</span><h2>Changes to this policy</h2></div>
+					<p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date above. Continued use of a Service after changes constitutes acceptance.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="policy-section" id="contact">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns">
+					<div class="sec-head"><span class="sec-num">11</span><h2>Contact us</h2></div>
+					<div class="policy-contact-card">
+						<div class="label">Business</div>
+						<div><span class="policy-fill">Your Name / Business Name</span></div>
+						<div class="label" style="margin-top:10px;">Email</div>
+						<div><span class="policy-fill">your-email@reactwithcode.com</span></div>
+						<div class="label" style="margin-top:10px;">Website</div>
+						<div><a href="https://reactwithcode.com">reactwithcode.com</a></div>
+					</div>
+					<p class="policy-note" style="margin-top:18px;">This policy applies to all current and future Shopify apps, web applications, and mobile applications developed by <span class="policy-fill">Your Name / Business Name</span>, unless a specific app links to a separate, app-specific privacy policy.</p>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="row text-center">
+				<div class="small-12 medium-6 medium-offset-3 columns">
+					<img src="assets/images/RWC-logo.png" alt="ReactWithCode Logo" class="footer-logo">
+					<p id="copyright">Copyright &copy; 2026 | ReactWithCode</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+</body>
+
+</html>
