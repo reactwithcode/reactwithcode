@@ -17,11 +17,11 @@ function makeWords() {
 			weight: 9,
 		},
 		{
-			text: 'javascript',
+			text: 'javascript/typescript',
 			weight: 13,
 		},
 		{
-			text: 'typescript',
+			text: 'nextjs',
 			weight: 13,
 		},
 		{
@@ -41,7 +41,7 @@ function makeWords() {
 			weight: 13,
 		},
 		{
-			text: 'nextjs',
+			text: 'remix',
 			weight: 13,
 		},
 		{
