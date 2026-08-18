@@ -2,11 +2,11 @@ function makeWords() {
 	var words = [
 		{
 			text: 'html5',
-			weight: 12,
+			weight: 10,
 		},
 		{
 			text: 'css3',
-			weight: 12,
+			weight: 10,
 		},
 		{
 			text: 'graphql',
@@ -14,10 +14,10 @@ function makeWords() {
 		},
 		{
 			text: 'polaris',
-			weight: 9,
+			weight: 11,
 		},
 		{
-			text: 'javascript/typescript',
+			text: 'javascript',
 			weight: 13,
 		},
 		{
@@ -25,8 +25,8 @@ function makeWords() {
 			weight: 13,
 		},
 		{
-			text: 'jquery',
-			weight: 10,
+			text: 'typescript',
+			weight: 13,
 		},
 		{
 			text: 'liquid',
