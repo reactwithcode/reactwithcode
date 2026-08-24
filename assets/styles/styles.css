@@ -475,6 +475,204 @@ label {
 	margin-bottom: 1em;
 }
 
+/*** process ("How We'll Work Together") ***/
+#process {
+	background-color: #20222E;
+	padding: 6em 4em 5.6em;
+}
+
+#process h2 {
+	color: #fff;
+	margin-bottom: .3em;
+}
+
+#process .tag-line {
+	color: #fff;
+	font-size: 1.2em;
+	margin-bottom: 3em;
+}
+
+.process-row {
+	margin-bottom: 2.5em;
+}
+
+.process-step {
+	margin-bottom: 2em;
+}
+
+.process-number {
+	display: block;
+	color: #76D093;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-size: 2.6em;
+	margin-bottom: .1em;
+}
+
+.process-step h3 {
+	color: #fff;
+	margin-bottom: .5em;
+}
+
+.process-step p {
+	color: #d7dae3;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-size: 1.05em;
+	line-height: 1.5;
+	max-width: 22em;
+	margin: 0 auto;
+}
+
+.process-meta {
+	color: #76D093 !important;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 700 !important;
+	font-size: .8em !important;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	margin-top: .8em !important;
+}
+
+.process-cta {
+	color: #76D093;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 700;
+	font-size: .9em;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-color .3s ease, color .3s ease;
+}
+
+.process-cta:hover {
+	color: #9be0b6;
+	border-bottom-color: #9be0b6;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 670px) {
+	#process {
+		padding: 4em 2em 3em;
+	}
+}
+
+/*** testimonials ("What Clients Say") ***/
+#testimonials {
+	background-color: #12141D;
+	padding: 6em 4em 5.6em;
+}
+
+#testimonials h2 {
+	color: #fff;
+	margin-bottom: .3em;
+}
+
+#testimonials .testimonials-tagline {
+	color: #76D093;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 1.4em;
+	margin-bottom: 3em;
+}
+
+.testimonials-row {
+	max-width: 78em;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.testimonials-row > [class*="columns"] {
+	display: flex;
+	margin-bottom: 1.6em;
+}
+
+.testimonial-card {
+	background-color: #191b26;
+	border: 1px solid #262838;
+	border-radius: 14px;
+	padding: 2.2em 2em;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	transition: border-color .3s ease, transform .3s ease;
+}
+
+.testimonial-quote {
+	flex-grow: 1;
+}
+
+.testimonial-card:hover {
+	border-color: #76D093;
+	transform: translateY(-3px);
+}
+
+.testimonial-card .quote-mark {
+	display: block;
+	color: #76D093;
+	font-family: Georgia, serif;
+	font-size: 3.4em;
+	line-height: .4;
+	margin-bottom: .4em;
+	opacity: .8;
+}
+
+.testimonial-quote {
+	color: #e8eaf0;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1.1em;
+	line-height: 1.6;
+	margin-bottom: 1.4em;
+}
+
+.testimonial-meta {
+	color: #9fd9b6;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 700;
+	font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	margin-bottom: 0;
+}
+
+.testimonial-meta .stars {
+	color: #76D093;
+	letter-spacing: .1em;
+	margin-right: .3em;
+}
+
+.testimonial-meta a {
+	color: #9fd9b6;
+	text-decoration: underline;
+	text-decoration-color: rgba(159, 217, 182, .4);
+}
+
+.testimonial-meta a:hover {
+	color: #fff;
+	text-decoration-color: #fff;
+}
+
+@media only screen and (max-width: 670px) {
+	#testimonials {
+		padding: 4em 2em 3em;
+	}
+
+	#testimonials .testimonials-tagline {
+		font-size: 1.15em;
+	}
+
+	.testimonials-row > [class*="columns"] {
+		margin-bottom: 1.3em;
+	}
+}
+
 /*** teaching ***/
 #teaching {
 	padding: 6em 4em 3em;
