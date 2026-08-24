@@ -118,6 +118,35 @@ function designForm() {
 	$('#my-modal form').addClass('my-form');
 }
 
+function implementVariantLogic() {
+	posthog.onFeatureFlags(function() {
+		var variant = posthog.getFeatureFlag('upwork-lead-flow');
+		var ctaButton = document.querySelector('#footer-cta .form-button') || document.querySelector('a.form-button');
+
+		if (!ctaButton) return;
+
+		if (variant === 'upwork-redirect') {
+			ctaButton.textContent = 'Hire Me on Upwork';
+			ctaButton.href = '#!';
+
+			ctaButton.addEventListener('click', function(e) {
+				e.preventDefault();
+				posthog.capture('lead_clicked_upwork', {
+					source: 'reactwithcode_contact_section',
+					destination: 'upwork'
+				});
+				window.location.href = 'https://www.upwork.com/freelancers/~019baacca8fff0b3eb?mp_source=share';
+			});
+		} else {
+			ctaButton.addEventListener('click', function() {
+				posthog.capture('lead_submitted_contact_form', {
+					source: 'reactwithcode_contact_section'
+				});
+			});
+		}
+	});
+}
+
 $(document).ready(function () {
 	Typed.new('#writing-text', {
 		strings: [
@@ -139,6 +168,7 @@ $(document).ready(function () {
 	});
 
 	displayWordCloud();
+	implementVariantLogic();
 });
 
 	var modal1 = document.getElementById('myModal1');
