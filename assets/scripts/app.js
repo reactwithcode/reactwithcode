@@ -152,7 +152,7 @@ $(document).ready(function () {
 		strings: [
 			'am a Full-stack Developer.',
 			'am a Shopify Developer & Designer.',
-			'turn ideas and designs into code.',
+			'go from idea to design to code.',
 			'solve problems.',
 		],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
