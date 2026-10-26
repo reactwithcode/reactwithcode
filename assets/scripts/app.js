@@ -33,7 +33,7 @@ function makeWords() {
 			weight: 12,
 		},
 		{
-			text: 'programming',
+			text: 'figma',
 			weight: 10,
 		},
 		{
@@ -61,7 +61,7 @@ function makeWords() {
 			weight: 10,
 		},
 		{
-			text: 'web development',
+			text: 'UI/UX',
 			weight: 10,
 		},
 		{
@@ -151,7 +151,7 @@ $(document).ready(function () {
 	Typed.new('#writing-text', {
 		strings: [
 			'am a Full-stack Developer.',
-			'am a Shopify Developer.',
+			'am a Shopify Developer & Designer.',
 			'love everything about code.',
 			'solve problems.',
 		],
