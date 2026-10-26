@@ -34,7 +34,7 @@ function makeWords() {
 		},
 		{
 			text: 'figma',
-			weight: 10,
+			weight: 12.1,
 		},
 		{
 			text: 'react',
@@ -54,7 +54,7 @@ function makeWords() {
 		},
 		{
 			text: 'nodejs',
-			weight: 12.3,
+			weight: 11,
 		},
 		{
 			text: 'Git',
@@ -62,7 +62,7 @@ function makeWords() {
 		},
 		{
 			text: 'UI/UX',
-			weight: 10,
+			weight: 12,
 		},
 		{
 			text: 'shopify development',
@@ -78,11 +78,11 @@ function makeWords() {
 		},
 		{
 			text: 'mongoDB',
-			weight: 13,
+			weight: 12,
 		},
 		{
 			text: 'postgreSQL',
-			weight: 13,
+			weight: 12,
 		},
 		{
 			text: 'shopify APIs',
@@ -90,7 +90,7 @@ function makeWords() {
 		},
 		{
 			text: 'tailwind',
-			weight: 11.8,
+			weight: 11,
 		},
 		/* ... */
 	];
@@ -152,7 +152,7 @@ $(document).ready(function () {
 		strings: [
 			'am a Full-stack Developer.',
 			'am a Shopify Developer & Designer.',
-			'love everything about code.',
+			'turn ideas into code.',
 			'solve problems.',
 		],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
