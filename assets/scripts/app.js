@@ -151,8 +151,8 @@ $(document).ready(function () {
 	Typed.new('#writing-text', {
 		strings: [
 			'am a Full-stack Developer.',
-			'am a Shopify Developer & Designer.',
-			'go from idea to design to code.',
+			'am a Shopify Developer.',
+			'love everything about code.',
 			'solve problems.',
 		],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
