@@ -19,6 +19,12 @@
 			'store-development': { USD: 400, IDR: 7000000 },
 			'custom-app':        { USD: 500, IDR: 8000000 },
 		},
+		/* Crossed-out "compare at" prices, shown next to the price when set.
+		   Leave null to show no compare price. Must be higher than the price above. */
+		comparePrices: {
+			'store-development': { USD: 600, IDR: 9000000 },
+			'custom-app':        { USD: 800, IDR: 10000000 }
+		},
 		geoTimeoutMs: 2500
 	};
 
@@ -77,11 +83,28 @@
 		});
 	}
 
+	function renderCompare(code) {
+		var nodes = document.querySelectorAll('[data-compare]');
+		Array.prototype.forEach.call(nodes, function (node) {
+			var key = node.getAttribute('data-compare');
+			var compare = CONFIG.comparePrices[key] && CONFIG.comparePrices[key][code];
+			var price = CONFIG.prices[key] && CONFIG.prices[key][code];
+			if (compare && price && compare > price) {
+				node.textContent = formatPrice(compare, code);
+				node.hidden = false;
+			} else {
+				node.hidden = true;
+			}
+		});
+	}
+
 	function setCurrency(code) {
 		renderPrices(code);
+		renderCompare(code);
 	}
 
 	function initCurrency() {
+		renderCompare('USD');
 		/* USD is already in the HTML. Only switch if we are confident the visitor is in Indonesia. */
 		var country = hostCountry();
 		if (country) { if (currencyFor(country) === 'IDR') setCurrency('IDR'); return; }

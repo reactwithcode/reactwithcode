@@ -1436,3 +1436,10 @@ dl.case-study dd {
 	font-size: .9em;
 	color: #9aa0ad;
 }
+
+.price-compare {
+	color: #9aa0ad;
+	font-size: .75em;
+	font-weight: 400;
+	margin-right: .3em;
+}
