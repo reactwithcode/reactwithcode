@@ -1443,3 +1443,51 @@ dl.case-study dd {
 	font-weight: 400;
 	margin-right: .3em;
 }
+
+/* The mobile menu panel waits off-screen at right:-300px. Clip it so it can't
+   widen the page (mobile browsers otherwise zoom out / pan to fit it). */
+html {
+	overflow-x: hidden;
+}
+
+.wrapper {
+	overflow-x: clip;
+}
+
+/*** hero typing animation ***/
+#about [data-typing] .typing-done,
+#about [data-typing] .typing-rest {
+	font-size: 1em;
+	font-weight: inherit;
+}
+
+.typing-rest {
+	visibility: hidden;
+}
+
+.is-typing .typing-done::after {
+	content: "";
+	display: inline-block;
+	width: 2px;
+	height: 1em;
+	margin-left: 2px;
+	vertical-align: -.1em;
+	background: #76D093;
+	animation: typing-caret 0.8s steps(1) infinite;
+}
+
+@keyframes typing-caret {
+	50% { opacity: 0; }
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}

@@ -171,7 +171,66 @@
 		});
 	}
 
+	/* ---------- hero typing animation ----------
+	   The full text stays in the DOM (readable by search engines and screen readers) and keeps
+	   its space from the start, so nothing jumps while it types. Skipped for reduced motion. */
+	function prepareTyping(el) {
+		var text = el.textContent;
+		var sr = document.createElement('span');
+		sr.className = 'sr-only';
+		sr.textContent = text;
+		var typed = document.createElement('span');
+		typed.className = 'typing-done';
+		typed.setAttribute('aria-hidden', 'true');
+		var rest = document.createElement('span');
+		rest.className = 'typing-rest';
+		rest.setAttribute('aria-hidden', 'true');
+		rest.textContent = text;
+		el.textContent = '';
+		el.appendChild(sr);
+		el.appendChild(typed);
+		el.appendChild(rest);
+		return { el: el, text: text, typed: typed, rest: rest, speed: parseInt(el.getAttribute('data-typing'), 10) || 25 };
+	}
+
+	/* Human-like rhythm: uneven keystrokes, a small hesitation after some spaces. */
+	function nextDelay(base, justTyped) {
+		var delay = base * (0.5 + Math.random());
+		if (justTyped === ' ' && Math.random() < 0.25) delay += 140 + Math.random() * 120;
+		return delay;
+	}
+
+	function runTyping(item) {
+		return new Promise(function (resolve) {
+			var i = 0;
+			item.el.classList.add('is-typing');
+			(function step() {
+				i += 1;
+				item.typed.textContent = item.text.slice(0, i);
+				item.rest.textContent = item.text.slice(i);
+				if (i < item.text.length) {
+					setTimeout(step, nextDelay(item.speed, item.text.charAt(i - 1)));
+				} else {
+					item.el.classList.remove('is-typing');
+					resolve();
+				}
+			})();
+		});
+	}
+
+	function initTyping() {
+		var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-typing]'));
+		if (!nodes.length) return;
+		if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+		/* hide all the text first so later lines don't flash in full before their turn */
+		var items = nodes.map(prepareTyping);
+		items.reduce(function (chain, item) {
+			return chain.then(function () { return runTyping(item); });
+		}, new Promise(function (resolve) { setTimeout(resolve, 350); }));
+	}
+
 	function init() {
+		initTyping();
 		initCurrency();
 		initForm();
 		initWhatsApp();
