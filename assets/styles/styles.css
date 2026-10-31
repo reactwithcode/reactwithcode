@@ -673,67 +673,6 @@ label {
 	}
 }
 
-/*** teaching ***/
-#teaching {
-	padding: 6em 4em 3em;
-}
-
-#teaching h2 {
-	color: #fff;
-}
-
-#teaching .tag-line {
-	color: #fff;
-	font-size: 1.4em;
-}
-
-#teaching .teaching-domains {
-	height: 500px;
-	width: auto;
-	margin-top: -4em;
-	margin-bottom: 2em;
-}
-
-/* Mobile responsive for teaching section */
-@media only screen and (max-width: 670px) {
-	#teaching {
-		padding: 4em 2em 2em;
-	}
-	
-	#teaching .tag-line {
-		font-size: 1.1em;
-		margin-bottom: 2em;
-	}
-	
-	#teaching .teaching-domains {
-		height: 350px;
-		width: 100%;
-		margin-top: -2em;
-		overflow: hidden;
-		margin-bottom: 2em;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*** Footer Call-to-action ***/
 #footer-cta {
 	background-color: #20222E;
@@ -861,9 +800,12 @@ label {
 .section-cta .cta-button {
 	display: inline-block;
 	margin: .4em .5em;
-	color: #fff;
 	text-align: center;
 	text-decoration: none;
+}
+
+.section-cta .cta-button {
+	color: #fff;
 }
 
 .cta .cta-whatsapp,
@@ -981,17 +923,17 @@ label {
 }
 
 /*** services ***/
-#services {
+#who-i-help {
 	background-color: #20222E;
 	padding: 5em 4em 4em;
 }
 
-#services h2 {
+#who-i-help h2 {
 	color: #fff;
 	margin-bottom: .3em;
 }
 
-#services .tag-line {
+#who-i-help .tag-line {
 	color: #fff;
 	font-size: 1.2em;
 	margin-bottom: 2.5em;
@@ -1325,7 +1267,7 @@ dl.case-study dd {
 	}
 
 	#about h1.hero-title { font-size: 1.9em; }
-	#services, #pricing, #about-me { padding: 4em 1.5em 3em; }
+	#who-i-help, #pricing, #about-me { padding: 4em 1.5em 3em; }
 	#featured-proof { padding: 0 1.5em 2.5em; }
 	#footer-cta { padding-left: 1.5em; padding-right: 1.5em; }
 	.about-photo { max-width: 12em; margin-bottom: 1.5em; }
@@ -1490,4 +1432,82 @@ html {
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border: 0;
+}
+
+/*** conversion hierarchy: Calendly is primary, WhatsApp is secondary ***/
+.cta .cta-whatsapp,
+.section-cta .cta-whatsapp,
+#footer-cta a.cta-whatsapp {
+	background: transparent;
+	border: 2px solid #25D366;
+	color: #25D366;
+}
+
+.cta .cta-whatsapp:hover,
+.cta .cta-whatsapp:focus,
+.section-cta .cta-whatsapp:hover,
+.section-cta .cta-whatsapp:focus,
+#footer-cta a.cta-whatsapp:hover,
+#footer-cta a.cta-whatsapp:focus {
+	background: #25D366;
+	color: #fff;
+}
+
+/* the form is a quiet fallback below the call button */
+.form-intro {
+	margin-top: 2.5em;
+	color: #d7dae3;
+}
+
+#footer-cta .contact-form-wrap button.my-button {
+	background: transparent;
+	border: 2px solid #76D093;
+	color: #76D093;
+}
+
+#footer-cta .contact-form-wrap button.my-button:hover,
+#footer-cta .contact-form-wrap button.my-button:focus {
+	background: #76D093;
+	color: #12141D;
+}
+
+/* who I help */
+.service-card .price-includes {
+	margin-bottom: 1.2em;
+}
+
+.service-link {
+	color: #9fd9b6;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.service-link:hover,
+.service-link:focus {
+	color: #fff;
+}
+
+/* work */
+.work-group-label {
+	color: #fff;
+	margin: 3em 0 .3em;
+}
+
+.work-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 14em;
+	border: 1px dashed #ffc107;
+	border-radius: 14px;
+	background: rgba(255, 193, 7, .06);
+}
+
+/* make sure links and buttons are easy to hit on touch screens */
+.service-link,
+.price-alt,
+.featured-link a {
+	display: inline-block;
+	padding: .5em 0;
 }
