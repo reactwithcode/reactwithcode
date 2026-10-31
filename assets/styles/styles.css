@@ -831,3 +831,608 @@ label {
 #footer .footer-links a:hover{
 	color: #76D093;
 }
+
+/*** hero (value statement, proof line, CTAs) ***/
+#about h1.hero-title {
+	color: #fff;
+	font-size: 2.6em;
+	line-height: 1.2;
+	padding-bottom: .3em;
+}
+
+#about .hero-sub {
+	font-size: 1.2em;
+	margin-top: 0;
+}
+
+#about .proof-line {
+	color: #9fd9b6;
+	font-size: 1em;
+	margin-bottom: 1.6em;
+}
+
+#about .proof-line .dot,
+#about .proof-line .placeholder {
+	font-size: 1em;
+	margin: 0 .4em;
+}
+
+#about .cta .cta-button,
+.section-cta .cta-button {
+	display: inline-block;
+	margin: .4em .5em;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.cta .cta-whatsapp,
+.section-cta .cta-whatsapp,
+#footer-cta a.cta-whatsapp {
+	background: #25D366;
+}
+
+.cta .cta-whatsapp:hover,
+.cta .cta-whatsapp:focus,
+.section-cta .cta-whatsapp:hover,
+.section-cta .cta-whatsapp:focus,
+#footer-cta a.cta-whatsapp:hover,
+#footer-cta a.cta-whatsapp:focus {
+	background: #fff;
+	color: #1da851;
+}
+
+.cta-note {
+	color: #9aa0ad;
+	font-family: "Maven pro", sans-serif;
+	font-size: .85em;
+	margin: .6em 0 0;
+}
+
+#about .cta-note, #footer-cta .cta-note {
+	font-size: .85em;
+	color: #9aa0ad;
+}
+
+.section-cta {
+	margin-top: 2em;
+}
+
+.placeholder {
+	background: rgba(255, 193, 7, .18);
+	border: 1px dashed #ffc107;
+	border-radius: 4px;
+	padding: 0 .3em;
+	color: #ffd966;
+}
+
+/*** featured testimonial ***/
+#featured-proof {
+	padding: 0 2em 3em;
+}
+
+.featured-testimonial {
+	margin: 0;
+	background-color: #191b26;
+	border: 1px solid #262838;
+	border-left: 4px solid #76D093;
+	border-radius: 14px;
+	padding: 1.8em 2em;
+}
+
+.featured-testimonial .stars {
+	color: #76D093;
+	letter-spacing: .1em;
+}
+
+.featured-testimonial blockquote {
+	color: #e8eaf0;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1.15em;
+	line-height: 1.6;
+	margin: .6em 0 1em;
+	padding: 0;
+	border: 0;
+}
+
+.featured-testimonial figcaption {
+	color: #9fd9b6;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 700;
+	font-size: .85em;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+}
+
+.featured-testimonial a,
+.featured-link a {
+	color: #9fd9b6;
+	text-decoration: underline;
+	text-decoration-color: rgba(159, 217, 182, .4);
+}
+
+.featured-testimonial a:hover,
+.featured-link a:hover {
+	color: #fff;
+}
+
+.featured-link {
+	margin-top: 1.2em;
+	font-family: "Maven pro", sans-serif;
+}
+
+.testimonial-avatar {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	object-fit: cover;
+	vertical-align: middle;
+	margin-right: .6em;
+}
+
+.testimonial-linkedin {
+	margin-left: .6em;
+}
+
+#testimonials .featured-link {
+	margin-top: 1em;
+}
+
+/*** services ***/
+#services {
+	background-color: #20222E;
+	padding: 5em 4em 4em;
+}
+
+#services h2 {
+	color: #fff;
+	margin-bottom: .3em;
+}
+
+#services .tag-line {
+	color: #fff;
+	font-size: 1.2em;
+	margin-bottom: 2.5em;
+}
+
+.services-row, .pricing-row {
+	max-width: 70em;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services-row > [class*="columns"],
+.pricing-row > [class*="columns"] {
+	display: flex;
+	margin-bottom: 1.6em;
+}
+
+.service-card, .price-card {
+	background-color: #191b26;
+	border: 1px solid #262838;
+	border-radius: 14px;
+	padding: 1.8em 1.8em;
+	width: 100%;
+	box-sizing: border-box;
+	transition: border-color .3s ease;
+}
+
+.service-card:hover, .price-card:hover {
+	border-color: #76D093;
+}
+
+.service-card h3, .price-card h3 {
+	color: #fff;
+	font-size: 1.3em;
+	margin-bottom: .5em;
+}
+
+.service-card p, .price-card p {
+	color: #d7dae3;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-bottom: .6em;
+}
+
+.service-card .service-for {
+	color: #76D093;
+	font-weight: 700;
+	font-size: .9em;
+	margin-bottom: 0;
+}
+
+/*** case studies ***/
+.platform .region,
+.region {
+	display: inline-block;
+	margin-left: .5em;
+	padding: .1em .7em;
+	border: 1px solid #76D093;
+	border-radius: 20px;
+	color: #76D093;
+	font-size: .85em;
+}
+
+dl.case-study {
+	margin: 0 0 1.4em;
+}
+
+dl.case-study dt {
+	color: #76D093;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	margin-top: .8em;
+}
+
+dl.case-study dd {
+	margin: .15em 0 0;
+	line-height: 1.5;
+}
+
+#work .section-cta {
+	margin-top: 1em;
+}
+
+/*** pricing ***/
+#pricing {
+	background-color: #20222E;
+	padding: 5em 4em 4em;
+}
+
+#pricing h2 {
+	color: #fff;
+	margin-bottom: .3em;
+}
+
+#pricing .tag-line {
+	color: #fff;
+	font-size: 1.2em;
+	margin-bottom: 1.5em;
+}
+
+.price-from {
+	color: #9fd9b6 !important;
+}
+
+.price-from strong {
+	color: #fff;
+	font-size: 1.4em;
+}
+
+.price {
+	display: inline-block;
+	min-width: 9.5ch; /* same width for "$400" and "Rp 7.000.000" so nothing jumps */
+}
+
+.price-note {
+	color: #d7dae3;
+	font-family: "Maven pro", sans-serif;
+	max-width: 40em;
+	margin: .5em auto 0;
+}
+
+/*** about me ***/
+#about-me {
+	padding: 5em 4em 4em;
+}
+
+.about-me-row {
+	max-width: 62em;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#about-me h2 {
+	color: #fff;
+	margin-bottom: .1em;
+}
+
+#about-me p {
+	color: #d7dae3;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+
+#about-me .about-location {
+	color: #76D093;
+	font-weight: 700;
+}
+
+#about-me .about-timezone {
+	border-left: 3px solid #76D093;
+	padding-left: 1em;
+}
+
+#about-me a {
+	color: #9fd9b6;
+	text-decoration: underline;
+}
+
+.about-photo {
+	width: 100%;
+	max-width: 18em;
+	height: auto;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+/*** tech stack ***/
+.other-tools {
+	margin-top: 2em;
+	color: #d7dae3;
+	font-family: "Maven pro", sans-serif;
+}
+
+.other-tools summary {
+	cursor: pointer;
+	color: #76D093;
+	font-weight: 700;
+}
+
+.other-tools p {
+	max-width: 45em;
+	margin: 1em auto 0;
+}
+
+/*** contact form ***/
+#footer-cta .section-cta {
+	margin-top: 1em;
+}
+
+.contact-form-wrap {
+	margin: auto;
+	width: 100%;
+}
+
+.contact-form-wrap .form-fields {
+	margin-bottom: 40px;
+}
+
+.contact-form-wrap input[aria-invalid="true"],
+.contact-form-wrap textarea[aria-invalid="true"] {
+	border-color: #ff6b6b;
+}
+
+.form-status {
+	margin-top: .8em;
+	font-size: 1em !important;
+}
+
+.form-status.is-success { color: #76D093 !important; }
+.form-status.is-error { color: #ff8a8a !important; }
+
+.form-alt a {
+	background: none !important;
+	border-radius: 0 !important;
+	color: #9fd9b6 !important;
+	text-decoration: underline;
+}
+
+/*** footer links ***/
+#footer .footer-links a + a {
+	margin-left: 1em;
+}
+
+/*** floating WhatsApp button ***/
+.wa-float {
+	position: fixed;
+	right: max(20px, env(safe-area-inset-right));
+	bottom: max(20px, env(safe-area-inset-bottom));
+	z-index: 2147483000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: #25D366;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .35);
+	text-decoration: none;
+	transition: transform .2s ease;
+}
+
+.wa-float:hover {
+	transform: scale(1.08);
+}
+
+.wa-float:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 3px;
+	box-shadow: 0 0 0 6px #12141D, 0 4px 12px rgba(0, 0, 0, .35);
+}
+
+.wa-float::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	border: 2px solid #25D366;
+	opacity: 0;
+	animation: wa-pulse 3s ease-out infinite;
+	pointer-events: none;
+}
+
+@keyframes wa-pulse {
+	0% { transform: scale(1); opacity: .5; }
+	70%, 100% { transform: scale(1.5); opacity: 0; }
+}
+
+.wa-float-label {
+	display: none;
+}
+
+@media (hover: hover) and (min-width: 768px) {
+	.wa-float-label {
+		display: block;
+		position: absolute;
+		right: calc(100% + 10px);
+		white-space: nowrap;
+		background: #12141D;
+		color: #fff;
+		font-family: "Maven pro", sans-serif;
+		font-size: .85rem;
+		padding: .4em .8em;
+		border-radius: 6px;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity .2s ease;
+	}
+
+	.wa-float:hover .wa-float-label,
+	.wa-float:focus-visible .wa-float-label {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wa-float::after { animation: none; display: none; }
+	.wa-float { transition: none; }
+}
+
+/* mobile: smaller button, spare room so it doesn't sit on footer links, and
+   step aside while a form field is being filled in */
+@media only screen and (max-width: 670px) {
+	.wa-float {
+		width: 52px;
+		height: 52px;
+	}
+
+	#footer {
+		padding-bottom: calc(5em + env(safe-area-inset-bottom));
+	}
+
+	body:has(#contact-form :focus) .wa-float {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#contact-form input,
+	#contact-form select,
+	#contact-form textarea {
+		scroll-margin-bottom: 90px;
+	}
+
+	#about h1.hero-title { font-size: 1.9em; }
+	#services, #pricing, #about-me { padding: 4em 1.5em 3em; }
+	#featured-proof { padding: 0 1.5em 2.5em; }
+	#footer-cta { padding-left: 1.5em; padding-right: 1.5em; }
+	.about-photo { max-width: 12em; margin-bottom: 1.5em; }
+}
+
+/* section-level CTAs reuse the hero button look */
+.section-cta .cta-button {
+	background: #73CB8E;
+	border-radius: 50px;
+	text-transform: uppercase;
+}
+
+.section-cta .cta-button:hover,
+.section-cta .cta-button:focus {
+	background-color: #fff;
+	color: #73CB8E;
+}
+
+dl.case-study dd {
+	color: #d7dae3;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+}
+
+#about .proof-line .upwork-rating {
+	font-size: 1em;
+	font-weight: 700;
+	color: #76D093;
+}
+
+/*** pricing cards: one clear action per card ***/
+.price-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.price-card .price-desc {
+	color: #fff;
+	font-size: 1.05em;
+}
+
+.price-includes {
+	list-style: none;
+	margin: .4em 0 1.6em;
+	padding: 0;
+	flex-grow: 1;
+}
+
+.price-includes li {
+	position: relative;
+	padding-left: 1.5em;
+	margin-bottom: .5em;
+	color: #d7dae3;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.price-includes li::before {
+	content: "\2713";
+	position: absolute;
+	left: 0;
+	color: #76D093;
+	font-weight: 900;
+}
+
+.price-actions {
+	text-align: center;
+}
+
+.price-card .price-cta {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #73CB8E;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.price-card .price-cta:hover,
+.price-card .price-cta:focus {
+	background: #fff;
+	color: #73CB8E;
+}
+
+.price-alt {
+	display: inline-block;
+	margin-top: .9em;
+	color: #9fd9b6;
+	font-family: "Maven pro", sans-serif;
+	font-size: .9em;
+	text-decoration: underline;
+}
+
+.price-alt:hover { color: #fff; }
+
+.price-reassure {
+	color: #76D093;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	margin-top: .5em;
+}
+
+.price-note {
+	font-size: .9em;
+	color: #9aa0ad;
+}
