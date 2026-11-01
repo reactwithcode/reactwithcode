@@ -1553,8 +1553,8 @@ html {
 #about .hero-bubble {
 	position: absolute;
 	z-index: 2;
-	top: -3.2em;
-	left: 66%;
+	top: -5.7em;
+	left: 59%;
 	width: 11em;
 	padding: .6em .9em .7em;
 	background: #76D093;
@@ -1684,4 +1684,45 @@ html {
 	0%, 70%, 100% { transform: translate(0, 0) rotate(0); }
 	78% { transform: translate(0, 1px) rotate(-6deg); }
 	86% { transform: translate(0, -1px) rotate(5deg); }
+}
+
+/* kicker line: "Psst." swaps to "Ow! Fine," once the fly lands on the bubble */
+#about .hero-bubble-kicker {
+	display: grid;
+}
+
+#about .hero-bubble-kicker > span {
+	grid-area: 1 / 1;
+	font-size: 1em;
+	font-weight: 900;
+}
+
+#about .kicker-hover {
+	opacity: 0;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+	#about .hero-photo:hover .kicker-default {
+		animation: kicker-out .01s linear 1.7s forwards;
+	}
+
+	#about .hero-photo:hover .kicker-hover {
+		animation: kicker-in .01s linear 1.7s forwards;
+	}
+
+	/* a little jolt as the fly touches down, then back to the wiggle */
+	#about .hero-photo:hover .hero-bubble {
+		animation: bubble-jolt .5s ease-out 1.7s 1 both, bubble-wiggle 7s ease-in-out 3s infinite;
+	}
+}
+
+@keyframes kicker-out { to { opacity: 0; } }
+@keyframes kicker-in { to { opacity: 1; } }
+
+@keyframes bubble-jolt {
+	0%   { transform: rotate(6deg) scale(1); }
+	20%  { transform: rotate(10deg) scale(1.07) translateY(2px); }
+	45%  { transform: rotate(2deg) scale(1.03); }
+	70%  { transform: rotate(8deg) scale(1.02); }
+	100% { transform: rotate(6deg) scale(1); }
 }
