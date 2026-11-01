@@ -1511,3 +1511,131 @@ html {
 	display: inline-block;
 	padding: .5em 0;
 }
+
+/*** hero photo: ring, gentle float, tilted speech bubble ***/
+#about .hero-photo {
+	position: relative;
+	display: inline-block;
+	width: 15em;
+	height: 15em;
+	bottom: 4em; /* lift the circle; the head extends above it */
+	animation: photo-float 6s ease-in-out infinite;
+}
+
+.hero-photo-ring {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: #76D093;
+	transform-origin: 50% 100%;
+	transition: transform .4s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+/* the cutout sits on the circle: head free above it, shoulders clipped to its curve */
+#about .hero-photo img.hero-cutout {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	width: 100%;
+	max-width: none;
+	height: auto;
+	clip-path: inset(-80% 0 0 0 round 0 0 7.5em 7.5em);
+	transform-origin: 50% 100%;
+	transition: transform .4s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+#about .hero-photo:hover img.hero-cutout,
+#about .hero-photo:hover .hero-photo-ring {
+	transform: scale(1.04);
+}
+
+#about .hero-bubble {
+	position: absolute;
+	z-index: 2;
+	top: -3.2em;
+	left: 66%;
+	width: 11em;
+	padding: .6em .9em .7em;
+	background: #76D093;
+	border: 3px solid #0b0c12;
+	border-radius: 8px;
+	box-shadow: 4px 4px 0 #0b0c12;
+	color: #12141D;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-size: 1.05em;
+	line-height: 1.15;
+	text-align: left;
+	text-decoration: none;
+	transform-origin: 10% 100%;
+	transform: rotate(6deg);
+	animation: bubble-pop .6s cubic-bezier(.34, 1.56, .64, 1) 1.2s both, bubble-wiggle 7s ease-in-out 4s infinite;
+}
+
+#about .hero-bubble::after {
+	content: "";
+	position: absolute;
+	left: 14px;
+	bottom: -14px;
+	border: 7px solid transparent;
+	border-top: 9px solid #0b0c12;
+	border-left-color: #0b0c12;
+}
+
+#about .hero-bubble:hover,
+#about .hero-bubble:focus-visible {
+	background: #fff;
+	animation: bubble-wiggle .6s ease-in-out 1;
+	outline: none;
+}
+
+#about .hero-bubble:focus-visible {
+	box-shadow: 4px 4px 0 #0b0c12, 0 0 0 3px #fff;
+}
+
+#about .hero-bubble-kicker {
+	display: block;
+	font-size: .6em;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: .15em;
+}
+
+@keyframes photo-float {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-6px); }
+}
+
+@keyframes bubble-pop {
+	0% { opacity: 0; transform: scale(.2) rotate(-12deg); }
+	100% { opacity: 1; transform: scale(1) rotate(6deg); }
+}
+
+@keyframes bubble-wiggle {
+	0%, 88%, 100% { transform: rotate(6deg); }
+	91% { transform: rotate(-2deg) scale(1.04); }
+	94% { transform: rotate(9deg) scale(1.04); }
+	97% { transform: rotate(3deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#about .hero-photo,
+	#about .hero-bubble {
+		animation: none;
+	}
+
+	#about .hero-photo img.hero-cutout,
+	.hero-photo-ring {
+		transition: none;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	#about .hero-bubble {
+		left: 56%;
+		width: 11em;
+		font-size: .9em;
+	}
+}
