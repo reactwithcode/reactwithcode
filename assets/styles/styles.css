@@ -1639,3 +1639,49 @@ html {
 		font-size: .9em;
 	}
 }
+
+/*** hover: a fly buzzes in and lands on the "Psst" bubble ***/
+.hero-fly {
+	position: absolute;
+	z-index: 3;
+	/* resting spot: sitting on the bubble's top edge (the fly rides the bubble's tilt) */
+	left: calc(72% - 13px);
+	top: -17px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+	#about .hero-photo:hover .hero-fly {
+		animation: fly-in 1.7s ease-in-out forwards, fly-twitch 1.6s ease-in-out 1.8s infinite;
+	}
+
+	#about .hero-photo:hover .fly-wing {
+		transform-box: fill-box;
+		transform-origin: 50% 100%;
+		animation: fly-wing .07s linear 0s 24 alternate;
+	}
+}
+
+@keyframes fly-in {
+	0%   { opacity: 0; transform: translate(-9em, 3em) rotate(-20deg); }
+	8%   { opacity: 1; }
+	28%  { transform: translate(-4em, -4em) rotate(30deg); }
+	45%  { transform: translate(3em, -2em) rotate(-40deg); }
+	62%  { transform: translate(5em, -5em) rotate(20deg); }
+	78%  { transform: translate(-2em, -3em) rotate(-25deg); }
+	92%  { transform: translate(.4em, -.8em) rotate(5deg); }
+	100% { opacity: 1; transform: translate(0, 0) rotate(0); }
+}
+
+@keyframes fly-wing {
+	from { transform: rotate(-10deg) scaleY(1); }
+	to   { transform: rotate(10deg) scaleY(.55); }
+}
+
+/* landed: a small rubbing twitch every so often */
+@keyframes fly-twitch {
+	0%, 70%, 100% { transform: translate(0, 0) rotate(0); }
+	78% { transform: translate(0, 1px) rotate(-6deg); }
+	86% { transform: translate(0, -1px) rotate(5deg); }
+}
